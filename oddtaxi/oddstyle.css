@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Nav Bar BEGINS  */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  padding: 1rem;
+  list-style: none;
+  background: linear-gradient(#2f4f4f, #5f9ea0);
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #fdda0d;
+}
+/* Nav Bar ENDS */
+
+video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character-img {
+  flex: 1 1 30rem;
+}
+
+.info-text {
+  padding: 2.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background: #ffe4b5;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  background-image: url(https://i2.wp.com/anitrendz.net/news/wp-content/uploads/2021/01/Odd-Taxi-1.jpg);
+}
+
+img {
+  width: 100%;
+}
+.stream {
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  background: #2f4f4f;
+  color: #fdda0d;
+  transition: background 0.5s ease-in-out;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+button:hover {
+  background: linear-gradient(#2f4f4f, #5f9ea0);
+}
+
+.moving-taxi {
+  position: absolute;
+  bottom: -1%;
+  max-width: 400px;
+  height: 400px;
+  flex-wrap: wrap;
+  left: -1%;
+  animation: taxiAnimation 2s infinite alternate ease-in-out;
+}
+
+@keyframes taxiAnimation {
+  from {
+    transform: translate(3%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}

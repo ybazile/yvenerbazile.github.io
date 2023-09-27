@@ -1,0 +1,58 @@
+body {
+  font-family: "Ninja Naruto", sans-serif;
+  background-color: #ffe182;
+}
+
+h1 {
+  font-size: 35px;
+  color: #e14011;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 200px;
+}
+
+u {
+  color: #e14011;
+}
+
+main {
+  background-color: white;
+  padding: 32px;
+  margin: 32px auto;
+  width: 700px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+footer a {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #e14011;
+  color: black;
+}
+
+footer a:hover,
+footer a:active {
+  color: #ffe182;
+}
