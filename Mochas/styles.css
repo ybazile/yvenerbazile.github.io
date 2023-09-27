@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #967969;
+  font-family: "Anton", sans-serif;
+  color: white;
+}
+
+.logo {
+  width: 9.375rem;
+  height: 6.25rem;
+}
+
+nav li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  padding: 1.875rem;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0.625rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+a:hover {
+  color: red;
+}
+
+#mocha {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.side img {
+  width: 100%;
+  height: auto;
+}
+.side img:hover {
+  content: url("img/Travis-Scott-Air-Jordan-1-Low-OG-Reverse-Mocha-DM7866-162-Release-Date-12\ Background\ Removed.jpg-2.png");
+  width: 100%;
+  height: 560px;
+}
+
+.info {
+  display: flex;
+  padding-left: 30px;
+  font-size: 35px;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+p {
+  padding: 12px;
+}
+
+.purchase {
+  background-color: #4b3f35;
+  border: 3px solid #e1cdb0;
+  font-family: "Anton", sans-serif;
+  font-size: 1.125rem;
+  padding: 1rem 1.4375rem;
+  color: white;
+  font-weight: 43.75rem;
+  border-radius: 6px;
+}
+
+.purchase:hover {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  #mocha {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .side img {
+    width: 100%;
+    height: auto;
+  }
+
+  .side img:hover {
+    content: url("img/Travis-Scott-Air-Jordan-1-Low-OG-Reverse-Mocha-DM7866-162-Release-Date-12\ Background\ Removed.jpg-2.png");
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+  }
+
+  .info {
+    padding: 1.5625rem;
+    font-size: 2.1875rem;
+  }
+
+  .purchase {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+  }
+}

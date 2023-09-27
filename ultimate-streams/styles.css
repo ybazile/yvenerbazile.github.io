@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Bodoni Moda", serif;
+}
+
+header {
+  background: linear-gradient(45deg, #000000, #195587, #117fc2, #caf9ff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+header a {
+  color: red;
+  text-decoration: none;
+  font-size: 25px;
+}
+#page-logo a {
+  padding: 10px;
+  font-family: "Limelight", cursive;
+  color: red;
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px red;
+}
+
+#hero {
+  height: 630px;
+  background-image: url(/images/posters/6cr5bjnEi.jpg);
+  background-position: center;
+  background-size: cover;
+  font-size: 20px;
+}
+
+#hero-section {
+  width: 900px;
+  background-color: rgba(71, 130, 232, 0.5);
+  /* background-color: #dcdcdc; */
+  box-shadow: 2px 4px 8px rgb(68, 67, 76);
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#highlights {
+  padding: 24px;
+  background: linear-gradient(45deg, #000000, #195587, #117fc2, #caf9ff);
+}
+#content {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.posters {
+  margin: 0 30px;
+}
+
+.posters img {
+  height: 300px;
+}
+
+p,
+h2 {
+  text-align: center;
+}
