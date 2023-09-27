@@ -1,0 +1,167 @@
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  background-color: #ff6100;
+}
+main h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+/* Navigation Bar */
+#main-header img {
+  height: 6.25rem;
+}
+
+#main-header {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  background: linear-gradient(60deg, white, #ff6100, #ffa44d);
+  padding: 0 5%;
+}
+
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  margin: 0 1.25rem;
+}
+#main-header nav a {
+  color: white;
+  font-size: 1.5625rem;
+}
+
+#main-header nav a:hover {
+  color: #d53939;
+}
+/* Navigation Bar */
+
+/* Burger Menu */
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: #d53939;
+}
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: #ffa44d;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: #d53939;
+  font-size: 2rem;
+}
+/* Burger Menu */
+
+/* Pizza Orders */
+#new-order {
+  width: 80%;
+  margin: 3.125rem auto;
+}
+
+#new-order ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  gap: 1.875rem;
+  list-style: none;
+}
+
+#new-order img {
+  width: 100%;
+  padding: 1.5625rem 0 0 0.625rem;
+}
+/* Pizza Orders */
+
+/* Pizza Options */
+.pizzas {
+  background-color: #d53939;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pizza0,
+.pizza1,
+.pizza2 {
+  padding: 1.5625rem;
+  text-align: center;
+}
+/* Pizza Options */
+
+/* Buttons */
+.btn {
+  background-color: #ffa44d;
+  color: white;
+  border-radius: 3px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+  background-color: #ff6100;
+}
+/* Buttons */
+
+@media (max-width: 768px) {
+  #main-header nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  main h1 {
+    font-size: 1.375rem;
+  }
+  #new-order ul {
+    grid-template-columns: 100%;
+  }
+}
